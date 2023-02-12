@@ -1,0 +1,96 @@
+.titulo{
+    color: var(--cor-titulo);
+    font-size: 24px;
+    margin: 32px 18px;
+}
+.produtos{
+    display: flex;
+    flex-direction: column;
+    margin:0 12px;
+    padding: 30px 8px;
+}
+.item{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-areas:
+        "foto titulo titulo"
+        "foto preco antigo"
+        "foto quantidade quantidade" 
+    ;
+    margin-bottom: 30px;
+}
+.fotoProduto{
+    width: 160px;
+    border-radius: 16px;
+    grid-area:foto ;
+}
+.NomeProduto{
+    grid-area: titulo;
+    color: var(--cor-titulo);
+    font-size: 12px;
+}
+.Preco{
+    grid-area: preco;
+    color: var(--laranja);
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+}
+.valor-antigo{
+    font-size: 10px;
+    color:var(--cor-titulo);
+    text-decoration:line-through;
+
+}
+.quantidade{
+    display: flex;
+    grid-area: quantidade;
+    justify-content: space-around;
+    align-items: center;
+    border:1px solid var(--cinza);
+    border-radius: 16px;
+    font-size: 16px;
+}
+.botao{
+    background-color: var(--fundo-cinza);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    color: var(--cinza);
+    transition: all 0.5s;
+}
+.sapato{
+    margin-bottom: 4em;
+}
+.frete,.total{
+    border-top: 1px solid #BDBDBD;
+    padding: 1em 0;
+}
+.numeros-valores{
+    margin-left: 16.5em;
+}
+.valor-frete{
+    margin-left:18.5em
+}
+@media screen and (min-width:1440px){
+    .produtos{
+        grid-area: produtos;
+        background: var(--cinza-tela-cheia);
+        border-radius: 16px;
+        width: 383px;
+        align-self: center;
+    }
+    .titulo{
+        font-size: 36px;
+    }
+    .fotoProduto{
+        margin-left: 15px;
+    }
+    .valores{
+        margin:0 10px
+    }
+    .botao:hover{
+        background-color: #bdbcbc;
+        cursor: pointer;
+    }
+}

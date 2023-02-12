@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout page</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1 class="titulo">Checkout</h1>
+    <section class="produtos">
+        <div class="item mochila">
+            <img src="img/photo1.png" alt="Foto mochila" class="fotoProduto fotoMochila">
+            <h3 class="NomeProduto">Vintage Backbag</h3>
+            <p class="Preco">$54.99<span class="valor-antigo">$94.99</span></p>
+            <div class="quantidade">
+                <button class="botao botao_subtracao">-</button>
+                <p class="numero">1</p>
+                <button class="botao botao_soma">+</button>
+            </div>
+        </div>
+        <div class="item sapato">
+            <img src="img/photo2.png" alt="Foto sapato" class="fotoProduto fotoSapato">
+            <h3 class="NomeProduto">Levi Shoes</h3>
+            <p class="Preco">$74.99<span class="valor-antigo">$124.99</span></p>
+            <div class="quantidade">
+                <button class="botao botao_subtracao">-</button>
+                <p class="numero">1</p>
+                <button class="botao botao_soma">+</button>
+            </div>
+        </div>
+        <div class="valores">
+            <p class="frete">Frete <span class="valor-frete">$ 19</span></p>
+            <p class="total">Total <span class="numeros-valores" id="preco">$ 148.98</span></p>
+        </div>
+    </section>
+    <section class="Informacoes-pessoais">
+        <div class="contato">
+            <h2 class="contato-titulo">Informações de contato</h2>
+
+            <label for="email">E-mail</label>
+            <input type="email" name="" id="email" placeholder="Insira seu email..." class="local-contato">
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="" id="telefone" placeholder="Insira seu telefone..." class="local-contato">
+        
+        </div>
+        <div class="endereco">
+            <h2 class="contato-titulo informacoes-endereco">Endereço de entrega</h2>
+
+            <label for="destinatario">Nome Completo</label>
+            <input type="text" class="local-contato" id="destinatario" placeholder="Seu nome...">
+
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" class="local-contato" placeholder="Seu endereço...">
+
+            <label for="cidade">Cidade</label>
+            <input type="text" class="local-contato" id="cidade" class="local-contato" placeholder="Sua cidade...">
+        
+            <label for="pais">País</label>
+            <input type="select" id="pais" class="local-contato pais" placeholder="Seu pais...">
+            <label for="CEP">Código postal</label>
+            <input type="text" class="local-contato" id="CEP" placeholder="Seu código postal...">
+
+            <input type="checkbox" name="" id="salvar">
+            <label for="salvar" class="opcao">Salvar informações</label>
+
+            <button class="enviar">Continue</button>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

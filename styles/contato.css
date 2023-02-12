@@ -1,0 +1,106 @@
+.Informacoes-pessoais{
+    padding: 30px 8px;
+}
+.Informacoes-pessoais label{
+  font-size: 14px;   
+  color: var(--cor-label);
+  margin: 45px 0;
+}
+.contato-titulo{
+    font-size: 16px;
+    margin: 10px 0;
+}
+.local-contato{
+    display: block;
+    width: 90%;
+    padding: 1em;
+    border:1px solid var(--cinza);
+    border-radius: 16px;
+    margin:0.5em 0 1em 0;
+}
+.local-contato::placeholder{
+    font-size: 14px;
+    font-family: 'Montserrat',sans-serif;
+}
+#email::placeholder{
+    background-image: url('../img/email.png');
+    background-repeat: no-repeat;
+    padding-left: 2.5em;
+}
+#telefone{
+    margin-bottom: 4em;
+}
+#telefone::placeholder{
+    background-image: url('../img/telefone.png');
+    background-size: 19px;
+    background-repeat: no-repeat;
+    padding-left: 2.5em;
+}
+#destinatario::placeholder{
+    background-image: url('../img/user.png');
+    background-size: 19px;
+    background-repeat: no-repeat;
+    padding-left: 2.5em;
+}
+#endereco::placeholder{
+    background-image: url('../img/casa.png');
+    background-repeat: no-repeat;
+    padding-left: 2.5em;
+}
+#cidade::placeholder{
+    background-image: url('../img/cidade.png');
+    background-repeat: no-repeat;
+    background-size: 19px;
+    padding-left: 2.5em;
+}
+
+#pais::placeholder{
+    background-image: url('../img/globo.png');
+    background-size: 19px;
+    background-repeat: no-repeat;
+    padding-left: 2.5em;
+}
+#CEP::placeholder{
+    background-image: url('../img/CEP.png');
+    background-size: 19px;
+    background-repeat: no-repeat;
+    padding-left: 2.5em;
+}
+#salvar:checked~.checkmarck{
+    background: var(--laranja);
+}
+.enviar{
+    display: block;
+    position: relative;
+    left: 50%;
+    width: 160px;
+    padding: 1.5em 1em;
+    margin:0.9em;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    background-color: var(--laranja);
+    color: var(--branco);
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+@media screen and (min-width:1440px){
+    .Informacoes-pessoais{
+        grid-area: infos;
+        width: 465px;
+    }
+    #salvar:hover{
+        cursor: pointer;
+    }
+    .enviar{
+        left: 58%;
+    }
+    .enviar:hover{
+        background-color: #da741a;
+        cursor: pointer;
+    }
+    .enviar:active{
+        background-color: green;
+    }
+}

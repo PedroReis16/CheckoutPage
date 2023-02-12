@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url("./produto.css");
+@import url("./contato.css");
+:root{
+    --fonte-principal:Montserrat;
+    --fonte-cor:#333333;
+    --cinza:#828282;
+    --laranja:#F2994A;
+    --cor-titulo:#4E5150;
+    --cor-label:#4F4F4F;
+    --fundo-cinza:#E0E0E0;
+    --branco:#FFFFFF;
+    --cinza-tela-cheia:#F2F2F2;
+}
+body{
+    font-family: var(--fonte-principal),'sans-serif';
+    font-size: 14px;
+    font-weight: 600;
+    background: var(--branco);
+}
+@media  screen and (min-width:1440px) {
+    body{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-template-areas: 
+            "titulo produtos"
+            "infos produtos"
+        ;
+        justify-content: space-around;
+        align-items: top;
+    }
+    
+}
