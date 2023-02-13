@@ -15,3 +15,8 @@ Checkout page é a representação de uma página para confirmação de compra, 
  ## Link do projeto
   https://pedroreis16.github.io/CheckoutPage/
 </div>
+
+## Autor
+Pedro Henrique Reis
+
+<a href="https://www.linkedin.com/in/pedroreis16/">https://www.linkedin.com/in/pedroreis16/</a>
