@@ -1,7 +1,7 @@
 # CheckoutPage
 
 ## Sobre o projeto 
-Checkout page é a representação de uma página para confirmação de compra, construído em HTML, CSS e JavaScript, sendo utilizado como base um desafio da plataforma devChallenges.io
+Checkout page é a representação de uma página para confirmação de compra, construído em HTML, CSS e JavaScript, sendo utilizado como base um desafio da plataforma  <a href="https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO"> devChallenges.io </a>
 
 ## Imagens do projeto
 <div style="display: inline_block">
